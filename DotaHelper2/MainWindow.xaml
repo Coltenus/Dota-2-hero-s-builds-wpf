@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DotaHelper2"
         mc:Ignorable="d"
-        Title="Hero's builds" Height="600" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Name="grid" Loaded="Grid_Loaded" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
-        <Label Name="title" FontSize="24" Margin="0,5,0,506" HorizontalAlignment="Center" >Hero's build</Label>
-        <ComboBox Name="comboB1" Margin="300,78,300,459" ItemsSource="{Binding Path=_dataCBList}"/>
-        <Button Name="button1" Margin="384,135,384,397" FontSize="16" Click="Button_ClickAsync">Confirm</Button>
-        <Button Name="button2" FontSize="12" Margin="27,25,822,506" RenderTransformOrigin="0.411,-2.647" Click="Button_Click_1">L/D</Button>
+        Title="Hero's builds" Height="650" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Name="grid" Loaded="Grid_Loaded" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Margin="0,0,0,-110">
+        <Label Name="title" FontSize="24" Margin="0,5,0,666" HorizontalAlignment="Center" >Hero's build</Label>
+        <ComboBox Name="comboB1" Margin="300,78,300,619" ItemsSource="{Binding Path=_dataCBList}"/>
+        <Button Name="button1" Margin="384,135,384,557" FontSize="16" Click="Button_ClickAsync">Confirm</Button>
+        <Button Name="button2" FontSize="12" Margin="27,25,822,666" RenderTransformOrigin="0.411,-2.647" Click="Button_Click_1">L/D</Button>
         <Label Name="build1" FontSize="12" Margin="0,220,600,0" RenderTransformOrigin="5.027,5.537" Visibility="Hidden">No data</Label>
         <Label Name="build2" FontSize="12" Margin="300,220,300,0" RenderTransformOrigin="5.027,5.537" Visibility="Hidden">No data</Label>
         <Label Name="build3" FontSize="12" Margin="600,220,0,0" RenderTransformOrigin="5.027,5.537" Visibility="Hidden">No data</Label>
